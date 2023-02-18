@@ -629,11 +629,50 @@ Bootstrap */
         code {
             color: var(--color-text);
         }
+
+        /* Add a black background color to the top navigation */
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            background-color: #6699CC;
+            color: white;
+        }
     </style>
 </head>
 
 
 <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 topnav">
+                <a class="active" href="#templates">Templates</a>
+                <a href="#project">Overview</a>
+                <!-- <a href="#features">Features</a> -->
+                <!-- <a href="#about">About</a> -->
+            </div>
+        </div>
+    </div>
+
     <!-- MAIN -->
     <main role="main">
         <section class="jumbotron text-center">
@@ -763,11 +802,169 @@ Bootstrap */
         </div>
     </main>
     <!-- / MAIN -->
-
+    <div class="container-fluid">
+        <div class="row">
+            <section class="jumbotron text-center" id="project">
+                <div class="container-fluid d-flex align-items-center justify-content-center flex-column"
+                    style='height:15vh;'>
+                    <h1 class="jumbotron-heading">Overview</h1>
+                </div>
+            </section>
+            <div class="col-lg-12">
+                <div class="row">
+                    <ul class="list-group">
+                        <div class="col-lg-6 p-0 m-0">
+                            <li class="list-group-item active" aria-current="true">User Side Page</li>
+                            <li class="list-group-item"><strong>Home page</strong><br /></li>
+                            <li class="list-group-item"><strong>Candidate application form page</strong><br /></li>
+                            <li class="list-group-item"><strong>Employer registration form page</strong><br /></li>
+                            <li class="list-group-item"><strong>About us Page</strong><br /></li>
+                            <li class="list-group-item"><strong>Services/Categories page</strong><br /></li>
+                            <li class="list-group-item"><strong>Employer Feedback</strong><br /></li>
+                            <li class="list-group-item"><strong>Inquiry application form page</strong><br /></li>
+                            <li class="list-group-item"><strong>Contact us page</strong><br /></li>
+                        </div>
+                        <div class="col-lg-6 p-0 m-0">
+                            <li class="list-group-item active" aria-current="true">Admin Side Page:</li>
+                            <li class="list-group-item"><strong>Admin dashboard page</strong><br /></li>
+                            <!-- <li class="list-group-item"><strong>Admin user management page</strong><br />
+                                <ul>
+                                    <li>Create User/Candidate</li>
+                                    <li>Profile Management</li>
+                                </ul>
+                            </li> -->
+                            <li class="list-group-item"><strong>Admin Candidate application management
+                                    page</strong><br />
+                                <ul>
+                                    <li><strong>Pages:</strong></li>
+                                    <li>Create Candidate form</li>
+                                    <li>Candidate Listing Page</li>
+                                    <li>Candidate View Page</li>
+                                </ul>
+                                <ul>
+                                    <li><strong>Additional:</strong></li>
+                                    <li>Validation</li>
+                                    <li>Pagination</li>
+                                    <li>Filter</li>
+                                    <li>Candidate Status</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item"><strong>Admin Job application management
+                                    page</strong><br />
+                                <ul>
+                                    <li><strong>Pages:</strong></li>
+                                    <li>Create Job Posting form</li>
+                                    <li>Job Listing Page</li>
+                                    <li>Job View Page</li>
+                                </ul>
+                                <ul>
+                                    <li><strong>Additional:</strong></li>
+                                    <li>Validation</li>
+                                    <li>Pagination</li>
+                                    <li>Filter</li>
+                                    <li>Job Avilablity Status</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item"><strong>Admin Employer application management
+                                    page</strong><br />
+                                <ul>
+                                    <li><strong>Pages:</strong></li>
+                                    <li>Create Employer form</li>
+                                    <li>Company Listing Page</li>
+                                    <li>Company View Page</li>
+                                </ul>
+                                <ul>
+                                    <li><strong>Additional:</strong></li>
+                                    <li>Validation</li>
+                                    <li>Pagination</li>
+                                    <li>Filter</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item"><strong>Admin Inquiry Mangement</strong><br />
+                                <ul>
+                                    <li>Pages</li>
+                                    <li>Inquiry List Page</li>
+                                </ul>
+                                <ul>
+                                    <li><strong>Additional:</strong></li>
+                                    <li>Pagination</li>
+                                    <li>Filter</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item"><strong>About us Mangement</strong><br />
+                                <ul>
+                                    <li>Pages</li>
+                                    <li>Create Content Form</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item"><strong>Services / Categories Mangement</strong><br />
+                                <ul>
+                                    <li>Pages</li>
+                                    <li>Create Categories Form</li>
+                                    <li>Categories List Page</li>
+                                </ul>
+                                <ul>
+                                    <li><strong>Additional:</strong></li>
+                                    <li>Pagination</li>
+                                    <li>Filter</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item"><strong>Admin Feedback Mangement</strong><br />
+                                <ul>
+                                    <li>Pages</li>
+                                    <li>Feedback List Page</li>
+                                </ul>
+                                <ul>
+                                    <li><strong>Additional:</strong></li>
+                                    <li>Pagination</li>
+                                    <li>Filter</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item"><strong>Contact us List Management</strong><br /></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-12 mt-5">
+                <ul class="list-group mt-5">
+                    <li class="list-group-item active" aria-current="true">An HR placement web application typically
+                        includes the following features/modules</li>
+                    <li class="list-group-item"><strong>Job Posting:</strong> This module allows HR personnel to create
+                        and post job vacancies along with their detailed job descriptions, required qualifications, and
+                        job locations.</li>
+                    <li class="list-group-item"><strong>Resume Submission:</strong> This module enables job seekers to
+                        submit their resumes online in response to job postings. The application should have an
+                        automated filtering system to help recruiters screen and shortlist qualified candidates.
+                    </li>
+                    <li class="list-group-item"><strong>Candidate Database:</strong> This module stores all the relevant
+                        information
+                        about candidates who have submitted their resumes. This information includes the candidate's
+                        name
+                    </li>
+                    <li class="list-group-item"><strong>Interview Scheduling:</strong> This module allows HR personnel
+                        to schedule
+                        interviews with shortlisted candidates through the application. The module should send automated
+                        notifications to candidates regarding the interview schedule
+                    </li>
+                    <li class="list-group-item"><strong>Application Tracking:</strong> This module helps HR personnel to
+                        track the progress
+                        of each candidate throughout the recruitment process. This includes tracking resumes received,
+                        interview schedules, candidate feedback, and the final hiring decision.
+                    </li>
+                    <li class="list-group-item"><strong>Reporting :</strong> This module generates reports that provide
+                        insights into
+                        various recruitment metrics such as the number of resumes received, the number of interviews
+                        conducted, and the time-to-hire. These reports can help HR personnel make data-driven decisions
+                        to improve their recruitment process.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <!-- FOOTER -->
     <footer class="text-muted mt-5">
-        <section class="jumbotron text-center mt-5">
+        <section class="jumbotron text-center mt-5" id="footer">
             <div class="container d-flex align-items-center justify-content-center flex-column" style='height:15vh;'>
                 <h1 class="jumbotron-heading text-dark"><a class="text-dark" href="#">Back to top</a></h1>
                 <p>All &copy; Rights are reserved to the Owner. </p>
